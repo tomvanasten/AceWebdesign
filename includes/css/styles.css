@@ -1,0 +1,237 @@
+/*
+
+My Custom CSS
+=============
+
+Written by Tom van Asten
+Ace Webdesigns.net
+
+*/
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#landpages {
+    text-align: center;
+}
+
+#landpages img {
+    margin: 0 0 20px;
+}
+
+#inputMessage {
+    margin-bottom: 15px;
+}
+
+#prijzen {
+    text-align: center;
+}
+
+#prijzen img {
+    margin: 0 0 20px;
+}
+
+.jumbotron {
+    position: relative;
+    margin: 0px 0 10px;
+    padding: 15vh 1vh;
+    background-color: #14b25a;
+    background-image: url(../../images/header_banner_large.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 11;
+}
+
+.jumbo-text {
+    margin-top: 6%;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)
+}
+
+.jumbo-text h2 {
+    text-align: right;
+    margin-right: 2%;
+}
+
+footer {
+    background: #333;
+    color: #eee;
+    font-size: 11px;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+footer .footer-text-tom a {
+    color: #16B35B;
+    text-align: left;
+}
+
+footer .footer-text-tom p {
+    color: #16B35B;
+    text-align: left;
+}
+
+.footer-onder {
+    background: transparent;
+    color: #333;
+    font-size: 11px;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 5px;
+    height: 90%;
+}
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
+}
+
+.well .page-header {
+    margin-top: 0;
+}
+
+.well .page-header h1 {
+    margin-top: 0;
+}
+
+ul.unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+.hr-tom {
+    border-bottom: 1px solid lightgray;
+}
+
+blockquote {
+    border-left: 6px solid #16B35B;
+    padding: 10px;
+}
+
+.well blockquote {
+    border-left: 6px solid #16B35B;
+    padding: 10px;
+}
+
+.dropdown-menu span.glyphicon {
+    font-size: 1.1em;
+    font-size-adjust: auto;
+}
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+.navbar-brand {
+    padding: 13px;
+}
+
+.navbar {
+    border-bottom: 2px solid #ccc;
+    height: 100dp;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+.alert {
+    margin-top: 20px;
+    display: none;
+}
+
+.well {
+    margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+    margin: 0 20px 10px 0;
+}
+
+.thumbnails {
+    margin: 20px 0;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.thumbnail h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+    line-height: 20px;
+}
+
+.thumbnail .price {
+    font-size: 20px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 10px;
+}
+
+.thumbnail .price sup {
+    font-weight: normal;
+    font-size: 12x;
+}
+
+.thumbnail span.glyphicon {
+    margin-right: 5px;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+/* Portrait & landscape phone */
+
+@media (max-width: 480px) {
+    .thumbnail .price {
+        font-size: 14px;
+    }
+    .thumbnail .price .sup {
+        font-size: 10px;
+    }
+    .page-header h1 {
+        font-size: 200%;
+    }
+    .page-header small {
+        font-size: 70%;
+    }
+    
+    .navbar {
+    border-bottom: 2px solid #ccc;
+    height: 56dp;
+}
+}
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 768px) {
+    .jumbo-text h2 {
+        font-size: 75%;
+    }
+    .jumbo-text h4 {
+        font-size: 75%;
+    }
+    /* Large desktop */
+    
+    @media (min-width: 1200px) {
+        .jumbotron {
+            font-size: 9px;
+        }
+        
+        .navbar {
+    border-bottom: 2px solid #ccc;
+    height: 64dp;
+}
+    }
