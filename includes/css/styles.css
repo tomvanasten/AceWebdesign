@@ -16,7 +16,8 @@ Ace Webdesigns.net
 }
 
 #landpages img {
-    margin: 0 0 20px;
+    margin: auto;
+        margin: 0 0 20px;
 }
 
 #inputMessage {
@@ -32,7 +33,6 @@ Ace Webdesigns.net
 }
 
 .jumbotron {
-    position: relative;
     margin: 0px 0 10px;
     padding: 15vh 1vh;
     background-color: #14b25a;
@@ -65,8 +65,7 @@ Ace Webdesigns.net
 }
 
 .jumbo-text h2 {
-    text-align: right;
-    margin-right: 2%;
+    text-align: center;
 }
 
 footer {
@@ -104,6 +103,15 @@ body {
     text-rendering: optimizeLegibility;
     padding: 0;
     margin: 0;
+    background-color: #F5F5F5;
+}
+
+.content {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #F5F5F5;
+  border: 1px solid white;
+  border-radius: 2px;
 }
 
 .well .page-header {
@@ -124,12 +132,12 @@ ul.unstyled {
 }
 
 blockquote {
-    border-left: 6px solid #16B35B;
+    border-left: 6px solid #00AFB0;
     padding: 10px;
 }
 
 .well blockquote {
-    border-left: 6px solid #16B35B;
+    border-left: 6px solid #00AFB0;
     padding: 10px;
 }
 
@@ -146,9 +154,12 @@ blockquote {
 }
 
 .navbar {
-    border-bottom: 2px solid #ccc;
+    border: 2px solid #ccc;
     height: 100dp;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
 }
 /* --------------------------------------
    Carousel
@@ -160,6 +171,10 @@ blockquote {
 .alert {
     margin-top: 20px;
     display: none;
+}
+
+.dropdown .active {
+    background-color: #00AFB0;
 }
 
 .well {
@@ -203,67 +218,27 @@ blockquote {
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
-/* Portrait & landscape phone */
-
-@media (max-width: 480px) {
-    .thumbnail .price {
-        font-size: 14px;
-    }
-    .thumbnail .price .sup {
-        font-size: 10px;
-    }
-    .page-header h1 {
-        font-size: 200%;
-    }
-    .page-header small {
-        font-size: 70%;
-    }
-    .navbar {
-        border-bottom: 2px solid #ccc;
-        height: 56dp;
-    }
-    .jumbotron-page {
-        position: relative;
-        margin: 0px 0 10px;
-        padding: 15vh 1vh;
-        background-color: #14b25a;
-        background-image: url(../../images/header_banner_large.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 63vh;
-        z-index: 11;
-    }
-    
-    .jumbotron-page h1 h2{
-        font-size-adjust: auto;
-    }
-    .jumbo-text-page h1 h2 {
-        font-size-adjust: auto;
-    }
-	.jumbo-text h2 {
-        font-size: 90%;
-    }
-    .jumbo-text h4 {
-        font-size: 90%;
-    }
+/* == Phones == */
+@media only screen and (min-width: 100px) and (max-width: 767px)
+{
+    /* == css== */
 }
-/* Landscape portrait tablet */
 
-@media (max-width: 768px) {
-    .jumbo-text h2 {
-        font-size: 75%;
-    }
-    .jumbo-text h4 {
-        font-size: 75%;
-    }
-    /* Large desktop */
+/* == Tablets == */
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+    /* == css== */
+}
+
+/* == Desktops == */
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+    /* == css== */
+}
     
-    @media (min-width: 1200px) {
-        .jumbotron {
-            font-size: 9px;
-        }
-        .navbar {
-            border-bottom: 2px solid #ccc;
-            height: 64dp;
-        }
-    }
+
+/* == Large desktops == */
+    @media only screen and (min-width: 1200px)
+{
+    /* == css== */
+}
